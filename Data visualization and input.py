@@ -1,19 +1,16 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Aug  5 16:35:20 2018
-
 @author: J.H LIU
 """
 
 ## Visualization of Cifar10 dataset 
-# bytes file to images file   32*32=1024
+# bytes file to images file
 
 import pickle as p
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.image as plimg
 from PIL import Image
-
 def load_CIFAR_batch(filename):
     """ load single batch of cifar """
     with open(filename, 'rb')as f:
