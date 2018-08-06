@@ -1,0 +1,21 @@
+@author: J.H LIU   https://github.com/Torrent148Me215
+
+The code could transfer CIFAR10 dataset from bytes file to image file.
+
+(1)Introduction to CIFAR-10
+¢Ù CIFAR-10 dataset consists of 60000 colorful images with a size of 32*32. The images are divided into 10 categories. 
+There are 50000 training images and 10000 testing images. 
+The dataset consists of 5 training batch and one testing batch. Each batch has 10000 images. Testing batch has 1000 images for each categories. 
+
+¢ÚEach batch have a data array and a label array. 
+The data array have a size of 10000*3072 with uint8s type.
+The image is stored by line.
+There are 10000 images in each batch and each image have a siez of 32*32* RGB = 3072.(The first 1024 colomn is red channel, then green and blue channel)
+The labels array consists of one list whose dimension is 10000. The indice i refers to the label of related element. 
+
+¢ÛAnother file in the dataset is batches.meta¡£This is a Python dictionary list.
+The label_names have 10 elements. The dictionary is a projection onto label names. 
+For example, label_names[0] == ¡°airplane¡±, label_names[1] == ¡°automobile".
+
+(2)download cifar dataset for Python
+http://www.cs.toronto.edu/~kriz/cifar.html 
